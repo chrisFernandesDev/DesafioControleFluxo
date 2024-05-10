@@ -1,0 +1,15 @@
+## Gherkin
+
+# Funcionalidade: Impressão de números incrementados
+
+  *Cenário:* Impressão de números incrementados
+    **Dado** que o usuário fornece dois números inteiros via terminal
+    **Quando** o sistema recebe os dois números
+    **Então** o sistema calcula a diferença entre os números para determinar a quantidade de iterações
+    **E** o sistema inicia um loop para imprimir os números incrementados até a diferença entre os números
+
+  *Cenário:* Lançamento de exceção para parâmetros inválidos
+    **Dado** que o usuário fornece dois números inteiros via terminal
+    **E** o primeiro número é maior que o segundo número
+    **Quando** o sistema recebe os dois números
+    **Então** o sistema lança uma exceção ParametrosInvalidosException com a mensagem "O segundo parâmetro deve ser maior que o primeiro"
